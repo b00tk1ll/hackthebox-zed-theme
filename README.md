@@ -1,6 +1,6 @@
 # HackTheBox (Zed)
 
-Extensão de **temas** para o [Zed](https://zed.dev), com as famílias **HackTheBox** (cores alinhadas ao tema homónimo do VS Code) e **HackTheBlue**.
+Extensão de **temas** para o [Zed](https://zed.dev), com as famílias **HackTheBox** (cores alinhadas ao tema homónimo do VS Code) e **HackTheBlue**(Cruzeiro Esporte Clube).
 
 ## Criar o repositório no GitHub e enviar o código
 
