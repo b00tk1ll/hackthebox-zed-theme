@@ -1,6 +1,22 @@
 # HackTheBox (Zed)
 
-Extensão de **temas** para o [Zed](https://zed.dev), com as famílias **HackTheBox** (cores alinhadas ao tema homónimo do VS Code) e **HackTheBlue***(Cruzeiro Esporte Clube).
+Extensão de **temas** para o [Zed](https://zed.dev), com as famílias **HackTheBox** (cores alinhadas ao tema homónimo do VS Code) e **HackTheBlue**.
+
+## Criar o repositório no GitHub e enviar o código
+
+O Git local já está inicializado na branch `main` com um commit inicial.
+
+1. No GitHub: **New repository** → nome sugerido: `hackthebox-zed-theme` → **público** → **sem** README/License (já existem aqui).
+2. Confirma que o campo `repository` em `extension.toml` bate certo com a URL do repo (hoje: `https://github.com/b00tk1ll/hackthebox-zed-theme`).
+3. Na pasta do projeto:
+
+   ```bash
+   git remote remove origin 2>nul
+   git remote add origin https://github.com/SEU_USUARIO/hackthebox-zed-theme.git
+   git push -u origin main
+   ```
+
+   (Se o `origin` já estiver correto, basta `git push -u origin main`.)
 
 ## Instalação local (desenvolvimento)
 
