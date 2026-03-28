@@ -60,7 +60,7 @@ O catálogo de extensões fica no repositório [**zed-industries/extensions**](h
    version = "0.1.0"
    ```
 
-5. Na raiz do fork, rode **`pnpm sort-extensions`** para ordenar `extensions.toml` e `.gitmodules`.
+5. Na raiz do fork, rode **`pnpm sort-extensions`** ou **`npm run sort-extensions`** (com dependências instaladas via `pnpm install` / `npm install`) para ordenar `extensions.toml` e `.gitmodules`.
 6. Abra um **Pull Request** contra `zed-industries/extensions`.
 
 Depois do **merge**, a extensão é empacotada e publicada no registro do Zed.
@@ -68,6 +68,22 @@ Depois do **merge**, a extensão é empacotada e publicada no registro do Zed.
 **Atualizações:** envie novos commits ao seu repositório, aumente a `version` no `extension.toml` e, no fork de `extensions`, atualize o submódulo e o campo `version` da entrada correspondente em `extensions.toml`.
 
 Guia completo: [Publishing your extension](https://zed.dev/docs/extensions/developing-extensions#publishing-your-extension).
+
+### Atalho: clone `extensions` já preparado neste PC
+
+Se você clonou o monorepo do catálogo na mesma pasta pai que este projeto (`Projetos/tema`), pode existir **`zed-extensions-pr`** com o *commit* **“Adiciona a extensão hackthebox-theme”** já aplicado (submódulo + `extensions.toml` + `sort-extensions`).
+
+Nesse caso falta só:
+
+1. Criar o *fork* de <https://github.com/zed-industries/extensions> na sua conta pessoal (ex.: `b00tk1ll/extensions`).
+2. No diretório `zed-extensions-pr`:
+
+   ```bash
+   git remote add fork https://github.com/SEU_USUARIO/extensions.git
+   git push -u fork main
+   ```
+
+3. Abrir o *Pull Request* **fork:main → zed-industries/extensions:main**.
 
 ## Estrutura do projeto
 
